@@ -1,0 +1,68 @@
+#logo {
+	color: white;
+	border-style: solid;
+	height: 2em;
+	background-color: blue;
+	padding: 0px;
+    margin-left: -11px;
+	margin-right: -11px;
+	margin-top:0px;
+	margin-bottom:0px;
+	text-align: center;
+}
+
+#banner {
+
+	color: black;
+	position:relative;
+	height: 4em;
+	background-color: white;
+	padding: 0px;
+  	margin-left: -10px;
+	margin-right: -10px;
+	margin-top:0px;
+	margin-bottom:0px;
+	text-align: center;
+}
+
+#menu {
+	
+	position:relative;
+	height: 2em;
+	background-color: blue;
+	color: white;
+	padding: 0px;
+    margin-left: -11px;
+	margin-right: -11px;
+	margin-top:0px;
+	margin-bottom:0px;
+	text-align: center;
+	
+	
+}
+
+#body {
+	border-style: none;
+	position:relative;
+	background-color: white;
+	color:black;
+	height: 20em;
+	box-shadow: 10px 10px 5px #888;
+	margin-left: -11px;
+	margin-right: -11px;
+	margin-top:0px;
+	margin-bottom:0px;
+	text-align: center;
+	
+}
+
+#footer {
+	/*	color: white;*/
+
+	/*border-style: solid; */
+	position:relative;
+	/*height:  4em;*/
+	/*background-color: blue;*/
+	/*color: white*/
+	text-align: center;
+}

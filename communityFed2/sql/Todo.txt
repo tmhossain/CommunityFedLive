@@ -1,0 +1,6 @@
+Encrypt password before saving to db
+forgot password feature - generate temp password,send in email and ask to change first time log in
+add login history feature
+User profile update feature
+features or service options
+
