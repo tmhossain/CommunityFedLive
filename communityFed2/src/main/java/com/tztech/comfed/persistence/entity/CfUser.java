@@ -1,14 +1,20 @@
 package com.tztech.comfed.persistence.entity;
 
+import java.util.ArrayList;
+
+import java.util.Collection;
 import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
-
 import org.hibernate.annotations.GenericGenerator;
+
+
 
 @Entity
 @Table (name="CF_USER")
@@ -65,6 +71,18 @@ public class CfUser {
 	@Column (name="PASSWORD")
 	private String password ;
 	
+	@OneToMany
+	@JoinColumn(name="user_id")
+	@org.hibernate.annotations.Cascade(org.hibernate.annotations.CascadeType.ALL)
+	private Collection<CfAddress> addresses = new ArrayList<CfAddress>();
+	
+	public Collection<CfAddress> getAddresses() {
+		return addresses;
+	}
+
+	public void setAddresses(Collection<CfAddress> addresses) {
+		this.addresses = addresses;
+	}
 	
 	public long getId() {
 		return id;
